@@ -36,7 +36,7 @@ class _UserScreenState extends State<UserScreen> {
             return ListView.separated(
               itemBuilder: (context, index) {
                 final data = state.usermodel[index];
-                return Text(data.name); // Add 'return' here
+                return Text(data.email); // Add 'return' here
               },
               separatorBuilder: (context, index) => Builder(builder: (context) {
                 return const Divider(
